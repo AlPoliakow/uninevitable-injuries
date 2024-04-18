@@ -125,10 +125,9 @@ header .content-wrapper{
 }
 
 header .content-wrapper .banner{
-  height:150px;
-  background:blue;
-  width:100%;
-  margin-bottom:20px;
+  height:200px;
+  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmNzcWhjZWVhZmJkZ251OTgwaXo0dXlkYTgwY242MWtybjYzdzVyZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3osxYhufvkO5dz9jSo/giphy.gif");
+  background-size: contain;
 }
 
 header h1{
@@ -142,6 +141,7 @@ h2{
 
 ul{
   padding:0 0 0 1em;
+  margin:0;
 }
 
 main .content-wrapper .articles article{
@@ -152,12 +152,28 @@ main .content-wrapper .articles article{
 }
 
 main .content-wrapper .articles article figure{
-  height:200px;
+  height:175px;
   border: black 2px solid;
+}
+
+main article .tests{
+  margin-bottom:1em;
+}
+
+main article .tests p{
+  margin:0;
+}
+
+main article p span{
+  font-weight:800;
 }
 
 main .content-wrapper .articles article span{
   font-weight:700;
+}
+
+main .content-wrapper .articles article .neg{
+  text-decoration:line-through;
 }
 
 footer .content-wrapper{
