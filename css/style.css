@@ -118,10 +118,26 @@ figure{
   justify-content:center;
 }
 
+/*---BASE HEADER STYLES---*/
 header .content-wrapper{
   display:flex;
   flex-direction:column;
   justify-content:center;
+}
+
+header nav ul {
+  display:flex;
+  justify-content:space-evenly;
+  list-style:none;
+  width:100%;
+  padding:0;
+  margin-bottom:20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 550;
 }
 
 header .content-wrapper .banner{
@@ -153,6 +169,7 @@ main .content-wrapper .articles article{
 
 main .content-wrapper .articles article figure{
   height:175px;
+  width:auto;
   border: black 2px solid;
 }
 
