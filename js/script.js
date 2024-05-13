@@ -133,8 +133,10 @@ kneeStrength.addEventListener("click", function(){
 
 kneeSpecific.addEventListener("click", function(){
     kneeSpecific.innerHTML=`<p><span>Specific tests:</span><br>
-    Q-angle -> <br>
-    Crepitis -> negative</p>`;
+    Crepitis -> negative<br>
+    McMurrays -> negative <br>
+    Patellar Grind test -> negative <br>
+    Femoral nerve tension test -> negative</p>`;
 })
 
 kneeFunctional.addEventListener("click", function(){
@@ -147,8 +149,9 @@ kneeFunctional.addEventListener("click", function(){
 })
 
 kneeAnterior.addEventListener("click", function(){
-    kneeAnterior.innerHTML=`<p><span>Anterior Knee Pain Scale:</span><br>
-    Score: xx </p>`;
+    kneeAnterior.innerHTML=`<p><span><a href="https://www.physiotutors.com/questionnaires/kujala-anterior-knee-pain-scale-akps/
+    " target="_blank" rel=“noopener noreferrer”>Anterior Knee Pain Scale:</a></span><br>
+    Score: 95/100</p>`;
 })
 
 //make knee test information disappear

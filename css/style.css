@@ -120,6 +120,7 @@ h3{
 }
 figure {
   margin: 0;
+  width:100%;
 }
 
 img {
@@ -181,8 +182,7 @@ img {
   width:100%;
   height:100%;
   list-style:none;
-  margin-bottom: 10%;
-  padding:0;
+  padding:1em 1em 10% 1em;
 }
 
 .full-screen-nav ul li {
@@ -226,18 +226,11 @@ header .content-wrapper .banner {
 
 header h1 {
   font-size: 2.25em;
-  width:70%;
+  width:65%;
   margin:0;
   text-align: center;
 }
 
-h3 {
-  border-top: dotted 2px black;
-  font-size: 1em;
-  margin-top:30px;
-  padding-top: 10px;
-  text-align: center;
-}
 
 .hero {
   min-height: 200px;
@@ -247,9 +240,20 @@ h3 {
   background-position: center;
 }
 
+.slogan h3 {
+  border-top: dotted 2px black;
+  border-bottom: dotted 2px black;
+  font-size: 1em;
+  margin-top:30px;
+  padding: 10px 1em;
+  text-align: center;
+}
 /*---Main Mobile Styles---*/
 main .content-wrapper .articles{
-  padding-top: 30px;
+  padding-top: 10px;
+  display:flex;
+  justify-content:center;
+  flex-flow: row wrap;
 }
 
 main .content-wrapper .articles article {
@@ -257,6 +261,7 @@ main .content-wrapper .articles article {
   border-radius: 0.5em;
   margin: 1em;
   padding: 1em;
+  max-width: 350px;
 }
 
 main .content-wrapper .articles article h2{
@@ -264,10 +269,16 @@ main .content-wrapper .articles article h2{
 }
 
 main .content-wrapper .articles article figure {
-  height: auto;
-  border: black 2px solid;
+  max-height: 200px;
+  overflow:hidden;
   display: flex;
   justify-content: center;
+}
+
+main .content-wrapper .articles article img{
+  max-height: 200px;
+  max-width: 400px;
+  border: black 2px solid;
 }
 
 main .content-wrapper .articles article ul {
@@ -417,6 +428,36 @@ footer .developed{
 @media only screen and (min-width: 768px) {
 
   /* Style adjustments for TABLETS */
+  /*---DROPLIST TABLET STYLES---*/
+  .full-screen-nav ul{
+    margin-top:3em;
+  }
+  /*---HEADER TABLET STYLES---*/
+  header{
+    display:flex;
+    justify-content:center;
+  }
+
+  header .content-wrapper{
+    min-width:700px;
+    max-width:900px;
+  }
+  header h1 {
+    font-size: 2.5em;
+    width:70%;
+    margin:0;
+    padding-top:0.6em;
+    text-align: center;
+  }
+
+  .hero {
+    min-height: 250px;
+    width:100%;
+    background: url('../img/hero2.jpg') #333 no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
   main .content-wrapper .articles {
     display: flex;
     flex-flow: row wrap;
@@ -425,6 +466,41 @@ footer .developed{
 
   main .content-wrapper .articles article {
     width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /*---DROPLIST DESKTOP STYLES---*/
+  .full-screen-nav ul{
+    margin-top:6em;
+  }
+
+  header .content-wrapper{
+    max-width:1000px
+  }
+
+  .hero {
+    min-height: 250px;
+    width:100%;
+    background: url('../img/hero3.jpg') #333 no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+   /*---DROPLIST MONITOR STYLES---*/
+   .full-screen-nav ul{
+    margin-top:9em;
+  }
+  
+  /*---DROPLIST HERO STYLES---*/
+  .hero {
+    min-height: 300px;
+    width:100%;
+    background: url('../img/hero4.jpg') #333 no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
