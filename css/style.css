@@ -87,27 +87,24 @@ body {
   width: 100%;
 }
 
-h2,
 h3,
 h4,
 p,
 a,
 ul,
 li {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1 {
-  font-family: "Permanent Marker", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
+  font-family: "Quattrocento", serif;
+  font-weight: 500;
   font-style: normal;
 }
 
-h3{
+h2{
   font-family: "Hedvig Letters Serif", serif;
   font-style: normal;
   font-weight: 450;
@@ -118,6 +115,7 @@ h3{
   text-decoration: none;
   opacity: 1.0;
 }
+
 figure {
   margin: 0;
   width:100%;
@@ -240,17 +238,17 @@ header h1 {
   background-position: center;
 }
 
-.slogan h3 {
+.slogan {
   border-top: dotted 2px black;
   border-bottom: dotted 2px black;
   font-size: 1em;
   margin-top:30px;
   padding: 10px 1em;
   text-align: center;
+  width:100%;
 }
 /*---Main Mobile Styles---*/
 main .content-wrapper .articles{
-  padding-top: 10px;
   display:flex;
   justify-content:center;
   flex-flow: row wrap;
@@ -264,8 +262,10 @@ main .content-wrapper .articles article {
   max-width: 350px;
 }
 
-main .content-wrapper .articles article h2{
+main .content-wrapper .articles article h3{
   text-align:center;
+  font-size: 1.75em;
+  font-weight:500;
 }
 
 main .content-wrapper .articles article figure {
