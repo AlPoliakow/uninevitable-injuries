@@ -11,7 +11,12 @@
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+  <!--Selected for readability as per Vision Australia recommendations-->
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
+    rel="stylesheet">
     <!--icons-->
     <script src="https://kit.fontawesome.com/5062d34338.js" crossorigin="anonymous"></script>
 </head>
@@ -20,16 +25,18 @@
     <header>
         <div class="content-wrapper">
             <h1><!--(Un)-->Inevitable injuries</h1>
-            <nav>
+            <nav class="full-screen-nav hide">
+                <div class="backdrop"></div>
                 <ul>
-                    <li><a href="#shoulder">Shoulder</a></li>
-                    <li><a href="#shoulder">Knee</a></li>
+                    <li class="close"><a href="#home" onclick="closeNav()">&times;</a></li>
+                    <li><a href="#shoulder" onclick="closeNav()">Shoulder</a></li>
+                    <li><a href="#knee" onclick="closeNav()"></i>Knee</a></li>
+                    <li><a href="#socials" onclick="closeNav()">Contact</a></li>
                 </ul>
             </nav>
-            <!--<h3>Things which were once perceived as inevitable can now be deemed as avoidable.</h3>-->
-            <div class="banner"> 
-            </div>
-            <p><a href="https://giphy.com/gifs/afv-funny-lol-fail-3osxYhufvkO5dz9jSo">Credit: GIPHY</a></p>
+            <button class="toggle" aria-label="navigation-menu"><i class="fa-solid fa-bars"></i>
+            </button>
+            <h3><i>"Things which were once perceived as inevitable can now be deemed as avoidable."</i></h3>
         </div>
         <!--<div class="search-bar">
             <label>Search by title</label>
@@ -38,15 +45,23 @@
     </header>
     <main>
         <div class="content-wrapper">
-            <div class="search-bar"></div>
+            <div class="hero">
+            </div>
             <section class="articles">
                 <article class="shoulder">
                     <h2>Shoulder injury</h2>
                     <figure>
-                        <a href="https://teachmeanatomy.info/upper-limb/joints/shoulder/" target="_blank" ><img src="img\shoulder.jpg" alt="A finger alongside a collar bone to highlight the bend in the bone"></a>
+                        <a href="https://teachmeanatomy.info/upper-limb/joints/shoulder/" target="_blank"><img
+                                src="img\shoulder1.jpg"
+                                alt="A finger alongside a collar bone to highlight the bend in the bone"></a>
                     </figure>
-                    <p><span>Case:</span> 29 y.o highly active individual had a fall from a bike whilst crossing tram tracks in the rain. Landed on left shoulder and neck and slid several metres pushing the shoulder into internal rotation and depression.
-                    <br>Presenting with general shoulder pain, inability to flex shoulder past 40 degrees and inability to externally rotate beyond -20 degrees.</p>
+                    <p><span>Case:</span> 29 y.o highly active individual had a fall from a bike whilst crossing tram
+                        tracks in the rain. Landed on left shoulder and neck and slid several metres pushing the
+                        shoulder into internal rotation and depression.
+                        <br>Presenting with general shoulder pain, inability to flex shoulder past 40 degrees and
+                        inability to externally rotate beyond -20 degrees.
+                        <br> No numbness/tingling/burning.
+                    </p>
                     <p class="pre-list tests"><span>Tests:</span></p>
                     <ul>
                         <li class="range">Range of movement</li>
@@ -58,20 +73,37 @@
                     </ul>
                     <p class="pre-list"><span>Reasoning:</span></p>
                     <ul>
-                        <li>Potential teres minor tear (incomplete) would explain pain/difficulty with external rotation and loss of shoulder flexion/abduction range</li>
-                        <li>This hypothesis is supported by pain on internal rotation (stretch) and pain on contraction</li>
+                        <li>Potential teres minor tear (incomplete) would explain pain/difficulty with external rotation
+                            and loss of shoulder flexion/abduction range</li>
+                        <li>This hypothesis is supported by pain on internal rotation (stretch) and pain on contraction
+                        </li>
                         <li>Generalised pain on palpation not a specific indicator</li>
+                        <li>Long head of biceps cleared</li>
+                        <li>Neck cleared to rule out referred pain contribution</li>
+                        <li>Subscapularis injury possible from testing but unlikely from mechanism of injury</li>
                     </ul>
-                    <p class="pre-list"><span>Working diagnosis:</span> subacromial bursa inflammation, posterior labrum inflammation, and grade 1-2 teres minor tear</p>
+                    <p class="pre-list"><span>Working diagnosis:</span> <br>
+                        Subacromial bursa inflammation,<br>
+                        Posterior labrum inflammation, <br>
+                        and grade 1-2 teres minor tear</p>
                     <p class="pre-list"><span>Treatment plan:</span></p>
                     <ul>
                         <li>Rest, using pain as a limiting factor</li>
-                        <li>Short term sling use and short term ibuprofen and paracetamol</li>
-                        <li>Gradual return to pain free ROM</li>
-                        <li>Isometric, pain free shoulder external rotation strengthening after 2 weeks rest</li>
+                        <li>Short term sling use</li>
+                        <li>Short term ibuprofen and paracetamol</li>
+                        <li>Pain free active assisted range of movement (until full pain free ROM)</li>
+                        <li>Pain free active ROM (until full pain free ROM) then add weight/resistance</li>
+                        <li>Isometric, pain free shoulder external rotation, shoulder internal rotation, elbow flexion
+                            and elbow extension</li>
+                        <li>Neutral shoulder, straight arm dumbbell hold</li>
                         <li>Shoulder external rotation sustained into shoulder flexion range</li>
-                        <li>Increased resistance and load as pain allows</li>
-                        <li>Pain free strengthening progression into ROM</li>
+                        <li>Inrease resistance and load as pain allows</li>
+                        <li>Progress to functional exercises integrating the kinetic chain</li>
+                        <li>Unilateral strengthening of unaffected upper limb with maximal load as pain allows</li>
+                        <li>Maintain cardiovascular fitness via non-painful modalities (stationary bike)</li>
+                        <li>Maintain lower limb strength with low-risk exercises such as seated knee extension/flexion
+                        </li>
+                        <li>Maintain core and forearm strength with pain free exercises</li>
                     </ul>
                     <p class="pre-list"><span>Recovery checklist:</span></p>
                     <ul class="recovery">
@@ -82,7 +114,15 @@
                     </ul>
                     <p class="pre-list"><span>Evidence/references:</span></p>
                     <ul>
-                        <li></li>
+                        <li><a href="https://stanfordmedicine25.stanford.edu/the25/shoulder.html" target="_blank"
+                                rel="noopener noreferrer">Shoulder exams</a> - Stanford Medicine</li>
+                        <li>Brukner P, & Khan K(Eds.), [2015] Brukner & Khan’s Clinical Sports Medicine: The Medicine of
+                            Exercise, 4th Ed, McGraw-Hill Education (Australia) Pty Ltd. PMCID: PMC3941124.</li>
+                        <li><a href="https://www.physio-pedia.com/Shoulder_Special_Tests" target="_blank"
+                                rel="noopener noreferrer">Shoulder Special Tests</a> - Physiopedia</li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5267375/" target="_blank"
+                                rel="noopener noreferrer">Physical Examination test of the shoulder</a> (Gismervik et
+                            al., 2017)</li>
                     </ul>
                 </article>
                 <article class="knee">
@@ -90,7 +130,9 @@
                     <figure>
                         <img>
                     </figure>
-                    <p><span>Case:</span>Active 29 y o reports knee pain during sustained and loaded flexion with particular pain during prolonged sitting and returning to movement. Only noted preceding factor is a rapid increase in cycling duration for 20 minutes to 2 hours regularly</p>
+                    <p><span>Case:</span>Active 29 y o reports knee pain during sustained and loaded flexion with
+                        particular pain during prolonged sitting and returning to movement. Only noted preceding factor
+                        is a rapid increase in cycling duration for 20 minutes to 2 hours regularly</p>
                     <p class="pre-list tests"><span>Tests:</span></p>
                     <ul>
                         <li class="range">Range of movement</li>
@@ -100,19 +142,30 @@
                         <li class="functional">Functional tests</li>
                         <li class="anterior">Anterior knee pain scale</li>
                     </ul>
-                    <p><span>Reasoning:</span>  sufficient knee extension strength, disproportionate weakness in hip and knee flexors and mild weakness in hip extensors</p>
-                    <p class="pre-list"><span>Working diagnosis:</span><a href="https://www.jospt.org/doi/10.2519/jospt.2019.0302?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed"> Patello-femoral pain</a></p>
+                    <p><span>Reasoning:</span> sufficient knee extension strength, disproportionate weakness in hip and
+                        knee flexors and mild weakness in hip extensors</p>
+                    <p class="pre-list"><span>Working diagnosis:</span><a
+                            href="https://www.jospt.org/doi/10.2519/jospt.2019.0302?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed">
+                            Patello-femoral pain</a></p>
                     <p class="pre-list"><span>Treatment plan:</span></p>
                     <ul>
-                        <li>Exercise therapy with combined hip and knee exercises<a href="https://core.ac.uk/reader/161894196?utm_source=linkout" target="_blank"> 1</a></li>
+                        <li>Exercise therapy with combined hip and knee exercises<a
+                                href="https://core.ac.uk/reader/161894196?utm_source=linkout" target="_blank"> 1</a>
+                        </li>
                         <li>Exercise therapy + foot orthoses or patellar taping or manual therapy</li>
-                        <li>Hip flexor strengthenging: <a href="https://www.google.com/search?q=straight+leg+raise+exercise&sca_esv=7d380bcdbd6e9b9f&rlz=1C1CHBF_en-GBAU965AU966&sxsrf=ACQVn08W0vWhyjxEIP7nEQmLezbiDLkSrw%3A1713495813450&ei=Bd8hZqyEG8j14-EP-OK60A8&ved=0ahUKEwjsmqOqpc2FAxXI-jgGHXixDvoQ4dUDCBA&uact=5&oq=straight+leg+raise+exercise&gs_lp=Egxnd3Mtd2l6LXNlcnAiG3N0cmFpZ2h0IGxlZyByYWlzZSBleGVyY2lzZTIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBUjzEFDGBli6D3ABeAGQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgGgAgmYAwCIBgGQBgqSBwExoAcA&sclient=gws-wiz-serp#fpstate=ive&vld=cid:d2d62403,vid:U4L_6JEv9Jg,st:0">straight leg raise</a> <a href="https://www.youtube.com/watch?v=qaaQnzWmWfc">resisted hip flexion</a></li>
-                        <li>Hip extensor and abductor strengthenging: bulgarian split squats, single leg bridges, end of range pistol squats</li>
-                        <li>Controlled mobility exercises: cossack squats, L-sit leg raises (hamstrings), Prasarita Padottanasana</li>
+                        <li>Hip flexor strengthenging: <a
+                                href="https://www.google.com/search?q=straight+leg+raise+exercise&sca_esv=7d380bcdbd6e9b9f&rlz=1C1CHBF_en-GBAU965AU966&sxsrf=ACQVn08W0vWhyjxEIP7nEQmLezbiDLkSrw%3A1713495813450&ei=Bd8hZqyEG8j14-EP-OK60A8&ved=0ahUKEwjsmqOqpc2FAxXI-jgGHXixDvoQ4dUDCBA&uact=5&oq=straight+leg+raise+exercise&gs_lp=Egxnd3Mtd2l6LXNlcnAiG3N0cmFpZ2h0IGxlZyByYWlzZSBleGVyY2lzZTIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBUjzEFDGBli6D3ABeAGQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgGgAgmYAwCIBgGQBgqSBwExoAcA&sclient=gws-wiz-serp#fpstate=ive&vld=cid:d2d62403,vid:U4L_6JEv9Jg,st:0">straight
+                                leg raise</a> <a href="https://www.youtube.com/watch?v=qaaQnzWmWfc">resisted hip
+                                flexion</a></li>
+                        <li>Hip extensor and abductor strengthenging: bulgarian split squats, single leg bridges, end of
+                            range pistol squats</li>
+                        <li>Controlled mobility exercises: cossack squats, L-sit leg raises (hamstrings), Prasarita
+                            Padottanasana</li>
                         <li>No dry needling</li>
                         <li>No manual therapy</li>
                     </ul>
-                    <p><span>Tips:</span> electrophysical agents not recommended, mobilisations not recommended in isolation (1)</p>
+                    <p><span>Tips:</span> electrophysical agents not recommended, mobilisations not recommended in
+                        isolation (1)</p>
                     <p class="pre-list"><span>Recovery checklist:</span></p>
                     <ul>
                         <li>Sitting 30 minutes pain free</li>
@@ -156,11 +209,19 @@
     </main>
     <footer>
         <div class="content-wrapper">
-            <div class="socials">
+            <div class="acknowledgement">
+                <p>I acknowledge the Traditional Custodians of Country throughout Australia and their connections to land, sea
+                  and community. I pay my respect to their Elders past and present and extend that respect to all Aboriginal and
+                  Torres Strait Islander peoples.</p>
+              </div>
+            <p id="socials">
+                <a href="mailto:mx.al.poliakow@gmail.com"><i class="fa-regular fa-envelope"></i></a>
                 <a href="https://github.com/AlPoliakow" target="_blank" rel="noopener"><i
-                    class="fa-brands fa-github"></i></a>
-            </div>
-            <p>Designed, researched and developed by Al Poliakow - 2024</p>
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/al-poliakow-2953282b6/" target="_blank" rel="noopener"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </p>
+            <p class="developed">Designed, researched and developed by Al Poliakow - 2024</p>
         </div>
     </footer>
 

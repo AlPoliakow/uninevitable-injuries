@@ -17,6 +17,18 @@ const kneeSpecific = document.querySelector(".knee .specific");
 const kneeFunctional = document.querySelector(".knee .functional");
 const kneeAnterior = document.querySelector(".knee .anterior");
 
+// nav menu
+const toggle = document.querySelector('.toggle');
+const nav = document.querySelector('.full-screen-nav');
+const backdrop = document.querySelector('.backdrop');
+
+toggle.addEventListener('click', () => nav.classList.add('open-nav'));
+backdrop.addEventListener('click', () => nav.classList.remove('open-nav'));
+
+function closeNav() {
+    nav.classList.remove('open-nav');
+}
+
 //change header on mouseover
 header.addEventListener("mouseover", function(){
     header.innerText="(Un)inevitable Injuries";
@@ -34,11 +46,14 @@ shoulderRange.addEventListener("click", function(){
     Abduction: 45 degrees p2<br>
     Extension: 10 degrees p2<br>
     Internal rotation: to abdomen<br>
-    External rotation: -10 degrees</p>`
+    External rotation: -10 degrees</p>
+    Passive range only partially tested:
+    `
 })
 
 shoulderPalpation.addEventListener("click", function(){
-    shoulderPalpation.innerHTML=`<p><span>Palpation:</span><br> glenohumeral joint intact with some anterior translation<br>
+    shoulderPalpation.innerHTML=`<p><span>Palpation:</span>
+    <br> Glenohumeral joint intact with some anterior translation<br>
     No subluxation or dislocation</p>`
 })
 
@@ -66,16 +81,19 @@ shoulderStrength.addEventListener("click", function(){
 
 shoulderSpecific.addEventListener("click", function(){
     shoulderSpecific.innerHTML=`<p><span>Specific tests:</span><br>
-    Crank's test -> negative <br>
-    Drop-arm test -> positive <br>
-    O'Brian's test -> negative <br>
-    Honrblower -> positive <br>
-    Neer's test -> <br>
-    Full can -> <br>
-    Empty can -> <br>
-    Infraspinatus-> <br>
-    Belly press test -> <br>
-    Lift off test -> </p>`;
+    <a href="https://www.physio-pedia.com/Crank_Test" target="_blank" rel=“noopener noreferrer”>Crank's test</a> (glenoid labral tears)-> negative <br>
+    <a href="https://www.physio-pedia.com/Drop_Arm_Test" target="_blank" rel=“noopener noreferrer”>Drop-arm test</a> (supraspinatus) -> positive <br>
+    <a href="https://www.physio-pedia.com/O%27Briens_Test" target="_blank" rel=“noopener noreferrer”>O'Brian's test</a> (SLAP lesion) -> negative <br>
+    <a href="https://www.physio-pedia.com/Hawkins_/_Kennedy_Impingement_Test_of_the_Shoulder" target="_blank" rel=“noopener noreferrer”>Hawkin's Kennedy</a> (impingement) -> negative <br>
+    <a href="https://www.physio-pedia.com/Neer_Test" target="_blank" rel=“noopener noreferrer”>Neer's test</a>  (impingement)-> negative<br>
+    <a href="https://www.physio-pedia.com/Yocum's_Test" target="_blank" rel=“noopener noreferrer”>Yocum's test</a> (subacromial impingment) -> positive <br>
+    <a href="https://www.physio-pedia.com/Hornblower%27s_Sign" target="_blank" rel=“noopener noreferrer”>Hornblower</a>  (teres minor) -> positive <br>
+    <a href="https://www.physio-pedia.com/External_Rotation_Lag_Sign_(ERLS)_Test" target="_blank" rel=“noopener noreferrer”>External rotation lag</a> (supraspinatus and infraspinatus)-> negative <br>
+    <a href="https://www.physio-pedia.com/Empty_Can_Test" target="_blank" rel=“noopener noreferrer”>Empty can</a> (supraspinatus) -> positive but pain from internal rotation, not resistance<br>
+    <a href="https://www.physio-pedia.com/Infraspinatus_Test" target="_blank" rel=“noopener noreferrer”>Infraspinatus</a>-> positive<br>
+    <a href="https://www.physio-pedia.com/Internal_Rotation_Lag_Sign" target="_blank" rel=“noopener noreferrer”>Internal rotation lag</a> (subscapularis)-> negative <br>
+    <a href="https://www.physio-pedia.com/Belly_Press_Test" target="_blank" rel=“noopener noreferrer”>Belly press test </a>(subscapularis) -> positive <br>
+    <a href="https://www.physio-pedia.com/Gerbers_Test" target="_blank" rel=“noopener noreferrer”>Gerber's Lift off test</a> (subscapularis) -> positive/unable </p>`;
 })
 
 //make shoulder test information disappear

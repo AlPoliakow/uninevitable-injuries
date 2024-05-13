@@ -83,8 +83,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body{
-  width:100%;
+body {
+  width: 100%;
 }
 
 h2,
@@ -93,122 +93,241 @@ h4,
 p,
 a,
 ul,
-li{
+li {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-h1{
+h1 {
   font-family: "Permanent Marker", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-figure,
-img{
+h3{
+  font-family: "Hedvig Letters Serif", serif;
+  font-style: normal;
+  font-weight: 450;
+  font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+  color: #152A3E;
+  text-decoration: none;
+  opacity: 1.0;
+}
+figure {
+  margin: 0;
+}
+
+img {
+  margin: 0;
+  width: 100%;
+}
+
+  /*---DROPDOWN---*/
+/* Nav Open Button */
+.toggle {
+  width:20%;
+  height:1.8em;
+  padding:0;
+  margin:0.2em;
+  background: var(--light-blue);
+  outline: 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 3em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.toggle:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  background: var(--highlight);
+}
+
+.toggle i {
+  color: black;
   margin:0;
   padding:0;
 }
 
-figure{
-  display:flex;
-  justify-content:center;
+/* Nav Position and Opening Class*/
+
+
+.full-screen-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s ease-in-out;
+  display: none;
+  z-index: 9999;
+  color:black;
+  height:100vh;
+  width:100vw;
+  background:white;
 }
+
+.full-screen-nav ul{
+  display:flex;
+  justify-content:space-around;
+  flex-flow: row wrap;
+  text-align:center;
+  width:100%;
+  height:100%;
+  list-style:none;
+  margin-bottom: 10%;
+  padding:0;
+}
+
+.full-screen-nav ul li {
+  width:100%;
+  padding:0;  
+  
+}
+
+.full-screen-nav ul .close {
+  text-align:right;
+  padding-right:20px;
+  font-size:2.5em;
+}
+
+.full-screen-nav ul li a{
+  font-size:2em;
+  padding:0;
+  text-decoration:none;
+  color: black;
+}
+.open-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /*---BASE HEADER STYLES---*/
-header .content-wrapper{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
+header .content-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow:row wrap;
+  padding: 1em;
 }
 
-header nav ul {
-  display:flex;
-  justify-content:space-evenly;
-  list-style:none;
-  width:100%;
-  padding:0;
-  margin-bottom:20px;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: 550;
-}
-
-header .content-wrapper .banner{
-  height:200px;
+header .content-wrapper .banner {
+  height: 200px;
   background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmNzcWhjZWVhZmJkZ251OTgwaXo0dXlkYTgwY242MWtybjYzdzVyZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3osxYhufvkO5dz9jSo/giphy.gif");
   background-size: contain;
 }
 
-header h1{
- font-size: 3em;
- text-align:center;
-}
-
-h2{
-  text-align:center;
-}
-
-ul{
-  padding:0 0 0 1em;
+header h1 {
+  font-size: 2.25em;
+  width:70%;
   margin:0;
+  text-align: center;
 }
 
-main .content-wrapper .articles article{
+h3 {
+  border-top: dotted 2px black;
+  font-size: 1em;
+  margin-top:30px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.hero {
+  min-height: 200px;
+  width:100%;
+  background: url('../img/hero1.jpg') #333 no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*---Main Mobile Styles---*/
+main .content-wrapper .articles{
+  padding-top: 30px;
+}
+
+main .content-wrapper .articles article {
   border: 2px black solid;
   border-radius: 0.5em;
   margin: 1em;
-  padding:1em;
+  padding: 1em;
 }
 
-main .content-wrapper .articles article figure{
-  height:175px;
-  width:auto;
+main .content-wrapper .articles article h2{
+  text-align:center;
+}
+
+main .content-wrapper .articles article figure {
+  height: auto;
   border: black 2px solid;
+  display: flex;
+  justify-content: center;
 }
 
-main article .tests{
-  margin-bottom:1em;
+main .content-wrapper .articles article ul {
+  padding: 0 0 0 1em;
+  margin: 0;
+}
+main article .tests {
+  margin-bottom: 1em;
 }
 
-main article .tests p{
+main article .tests p {
+  margin: 0;
+}
+
+main article p span {
+  font-weight: 800;
+}
+
+main article .pre-list {
+  margin-bottom: 0;
+}
+
+main .content-wrapper .articles article span {
+  font-weight: 700;
+}
+
+main .content-wrapper .articles article .neg {
+  text-decoration: line-through;
+}
+
+footer .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+footer .acknowledgement {
+  border: 2px dotted black;
+}
+
+footer .acknowledgement p{
+  padding: 0.5em;
   margin:0;
+  font-size: 0.85em;
+  font-weight: 600;
 }
 
-main article p span{
-  font-weight:800;
-}
-
-main article .pre-list{
-  margin-bottom:0;
-}
-
-main .content-wrapper .articles article span{
-  font-weight:700;
-}
-
-main .content-wrapper .articles article .neg{
-  text-decoration:line-through;
-}
-
-footer .content-wrapper{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-  padding: 2em 0;
-}
-
-footer .content-wrapper .socials a{
+footer .content-wrapper #socials a {
   font-size: 3em;
-  color:black;
+  margin: 0 10px;
+  color: black;
 }
+
+footer .developed{
+  margin:0 3em;
+}
+
 
 
 
@@ -296,21 +415,23 @@ footer .content-wrapper .socials a{
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
+
   /* Style adjustments for TABLETS */
-  main .content-wrapper .articles{
+  main .content-wrapper .articles {
     display: flex;
     flex-flow: row wrap;
-    justify-content:center;
+    justify-content: center;
   }
-  main .content-wrapper .articles article{
-    width:40%;
+
+  main .content-wrapper .articles article {
+    width: 40%;
   }
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -321,6 +442,7 @@ footer .content-wrapper .socials a{
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -380,4 +502,3 @@ footer .content-wrapper .socials a{
     page-break-after: avoid;
   }
 }
-
