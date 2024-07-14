@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--Main fonts selected for readability as per Vision Australia recommendations-->
-    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Lora:ital,wght@0,400..700;1,400..700&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Lora:ital,wght@0,400..700;1,400..700&family=Quattrocento:wght@400;700&display=swap"
+        rel="stylesheet">
     <!--icons-->
     <script src="https://kit.fontawesome.com/5062d34338.js" crossorigin="anonymous"></script>
 </head>
@@ -39,13 +41,13 @@
             <div class="hero">
             </div>
             <section class="articles">
-                <h2 class="slogan"><i>"Things which were once perceived as inevitable can now be deemed avoidable."</i></h2>
+                <h2 class="slogan"><i>"Things which were once perceived as inevitable can now be deemed avoidable."</i>
+                </h2>
                 <article class="shoulder">
                     <h3>Shoulder injury</h3>
                     <figure>
-                      <img
-                                src="img/shoulder1.jpg"
-                                alt="A finger alongside a collar bone to highlight the bend in the bone">
+                        <img src="img/shoulder1.jpg"
+                            alt="A finger alongside a collar bone to highlight the bend in the bone">
                     </figure>
                     <p><span>Case:</span> 29 y.o highly active individual had a fall from a bike whilst crossing tram
                         tracks in the rain. Landed on left shoulder and neck and slid several metres pushing the
@@ -54,8 +56,12 @@
                         inability to externally rotate beyond -20 degrees.
                         <br> No numbness/tingling/burning.
                     </p>
-                    <p class="pre-list tests"><span>Tests:</span></p>
-                    <ul>
+                    <div class="tests-base base">
+                        <p class="pre-list tests-title"><span>Tests:</span></p>
+                        <button type="button" aria-describedby="Expand to see tests" class="expandable"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <ul class="not-displayed tests-content">
                         <li class="range">Range of movement</li>
                         <li class="palpation">Palpation</li>
                         <li class="x-ray">X-ray</li>
@@ -63,8 +69,12 @@
                         <li class="strength">Strength</li>
                         <li class="specific">Specific tests</li>
                     </ul>
-                    <p class="pre-list"><span>Reasoning:</span></p>
-                    <ul>
+                    <div class="reasoning-base base">
+                        <p class="pre-list"><span>Reasoning:</span></p><button type="button"
+                            aria-describedby="Expand to see reasoning" class="expandable"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <ul class="not-displayed reasoning-content">
                         <li>Potential teres minor tear (incomplete) would explain pain/difficulty with external rotation
                             and loss of shoulder flexion/abduction range</li>
                         <li>This hypothesis is supported by pain on internal rotation (stretch) and pain on contraction
@@ -74,12 +84,22 @@
                         <li>Neck cleared to rule out referred pain contribution</li>
                         <li>Subscapularis injury possible from testing but unlikely from mechanism of injury</li>
                     </ul>
-                    <p class="pre-list"><span>Working diagnosis:</span> <br>
-                        Subacromial bursa inflammation,<br>
-                        Posterior labrum inflammation, <br>
-                        and grade 1-2 teres minor tear</p>
-                    <p class="pre-list"><span>Treatment plan:</span></p>
-                    <ul>
+                    <div class="diagnosis-base base">
+                        <p class="pre-list"><span>Working diagnosis:</span></p><button type="button"
+                            aria-describedby="Expand to see working diagnosis" class="expandable"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <ul class="not-displayed no-points diagnosis-content">
+                        <li>Subacromial bursa inflammation,</li>
+                        <li>Posterior labrum inflammation,</li>
+                        <li>and grade 1-2 teres minor tear</li>
+                    </ul>
+                    <div class="plan-base base">
+                        <p class="pre-list"><span>Treatment plan:</span></p><button type="button"
+                        aria-describedby="Expand to see reasoning" class="expandable"><i
+                            class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <ul class="not-displayed plan-content">
                         <li>Rest, using pain as a limiting factor</li>
                         <li>Short term sling use</li>
                         <li>Short term ibuprofen and paracetamol</li>
@@ -97,106 +117,125 @@
                         </li>
                         <li>Maintain core and forearm strength with pain free exercises</li>
                     </ul>
-                    <p class="pre-list"><span>Recovery checklist:</span></p>
-                    <ul class="recovery">
+                    <div class="checklist-base base">
+                        <p class="pre-list"><span>Recovery checklist:</span></p><button type="button"
+                            aria-describedby="Expand to see recovery checklist" class="expandable"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <ul class="recovery not-displayed checklist-content">
                         <li>Normal clinical examination &check;</li>
                         <li>Normal shoulder arthokinetics &check;</li>
                         <li>Normal kinetic chain integration &check;</li>
                         <li>Completed exercise progressions &check;</li>
                     </ul>
-                    <p><span>Recovery status:</span> full recovery, returned to sport</p>
-                    <p class="pre-list"><span>Evidence/references:</span></p>
-                    <ul>
+                    <div class="status-base base">
+                        <p><span>Recovery status:</span></p><button type="button" aria-describedby="Expand to see tests"
+                            class="expandable"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <ul class="not-displayed no-points status-content"> 
+                        <li>Full recovery, returned to sport</li>
+                    </ul>
+                    <div class="evidence-base base">
+                        <p class="pre-list"><span>Evidence/references:</span></p> <button type="button"
+                            aria-describedby="Expand to see evidence" class="expandable"><i
+                                class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <ul class="not-displayed evidence-content">
                         <li><a href="https://stanfordmedicine25.stanford.edu/the25/shoulder.html" target="_blank"
                                 rel="noopener noreferrer">Shoulder exams</a> - Stanford Medicine</li>
-                        <li>Brukner P, & Khan K(Eds.), [2015] Brukner & Khan’s Clinical Sports Medicine: The Medicine of
+                        <li>Brukner P, & Khan K(Eds.), [2015] Brukner & Khan’s Clinical Sports Medicine: The
+                            Medicine of
                             Exercise, 4th Ed, McGraw-Hill Education (Australia) Pty Ltd. PMCID: PMC3941124.</li>
                         <li><a href="https://www.physio-pedia.com/Shoulder_Special_Tests" target="_blank"
                                 rel="noopener noreferrer">Shoulder Special Tests</a> - Physiopedia</li>
                         <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5267375/" target="_blank"
-                                rel="noopener noreferrer">Physical Examination test of the shoulder</a> (Gismervik et
+                                rel="noopener noreferrer">Physical Examination test of the shoulder</a> (Gismervik
+                            et
                             al., 2017)</li>
-                    </ul>
-                </article>
-                <article class="knee">
-                    <h3>Knee injury</h3>
-                    <figure>
-                        <img src="img/knee.jpg" alt="An extended knee with tensed muscles">
-                    </figure>
-                    <p><span>Case:</span> 29 y. o. highly active individual reports knee pain during sustained and loaded flexion with
-                        particular pain issues during prolonged sitting and returning to movement post prolonged sitting. Long-term symptoms with increase in
-                        severity after rapid increase in cycling duration from 20 minutes to 2 hours regularly, multiple times weekly. </p>
-                    <p class="pre-list tests"><span>Tests:</span></p>
-                    <ul>
-                        <li class="range">Range of movement</li>
-                        <li class="palpation">Palpation/observation</li>
-                        <li class="strength">Strength</li>
-                        <li class="specific">Specific tests</li>
-                        <li class="functional">Functional tests</li>
-                        <li class="anterior">Anterior knee pain scale</li>
-                    </ul>
-                    <p class="pre-list"><span>Reasoning:</span></p>
-                    <ul>
-                        <li>Sufficient knee extension strength, disproportionate weakness in hip and
-                            knee flexors and mild weakness in hip extensors</li>
-                        <li><em>Eliminated diagnoses:</em> Plica syndrome, Capital Femoral Epiphysis, muscle tears,
-                            articular cartilage lesion, Osteochondritis Dissecans of the knee,
-                            Patellofemoral instability, Patellar Tendinopathy, Knee Osteoarthritis, Prepatellar
-                            Bursitis, Iliotibial band syndrome</li>
-                        <li>Fractures unlikely due to symptom severity and pattern</li>
-                    </ul>
-                    <p class="pre-list"><span>Working diagnosis:</span><a
-                            href="https://www.jospt.org/doi/10.2519/jospt.2019.0302?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed">
-                            Patello-femoral pain</a></p>
-                    <p class="pre-list"><span>Treatment plan:</span></p>
-                    <ul>
-                        <li>Exercise therapy with combined hip and knee exercises<a
-                                href="https://core.ac.uk/reader/161894196?utm_source=linkout" target="_blank"> 1</a>
-                        </li>
-                        <li>Exercise therapy + foot orthoses or patellar taping or manual therapy</li>
-                        <li>Hip flexor strengthenging: <a
-                                href="https://www.google.com/search?q=straight+leg+raise+exercise&sca_esv=7d380bcdbd6e9b9f&rlz=1C1CHBF_en-GBAU965AU966&sxsrf=ACQVn08W0vWhyjxEIP7nEQmLezbiDLkSrw%3A1713495813450&ei=Bd8hZqyEG8j14-EP-OK60A8&ved=0ahUKEwjsmqOqpc2FAxXI-jgGHXixDvoQ4dUDCBA&uact=5&oq=straight+leg+raise+exercise&gs_lp=Egxnd3Mtd2l6LXNlcnAiG3N0cmFpZ2h0IGxlZyByYWlzZSBleGVyY2lzZTIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBUjzEFDGBli6D3ABeAGQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgGgAgmYAwCIBgGQBgqSBwExoAcA&sclient=gws-wiz-serp#fpstate=ive&vld=cid:d2d62403,vid:U4L_6JEv9Jg,st:0">straight
-                                leg raise</a> <a href="https://www.youtube.com/watch?v=qaaQnzWmWfc">resisted hip
-                                flexion</a></li>
-                        <li>Hip extensor and abductor strengthenging: bulgarian split squats, single leg bridges, end of
-                            range pistol squats</li>
-                        <li>Controlled mobility exercises: cossack squats, L-sit leg raises (hamstrings), Prasarita
-                            Padottanasana</li>
-                        <li>Avoid: dry needling, manual therapy, mobilisations in isolation, and electrophysical agents
-                        </li>
-                        <li>No manual therapy</li>
-                    </ul>
-                    <p class="pre-list"><span>Recovery checklist:</span></p>
-                    <ul>
-                        <li>Sitting 30 minutes pain free &times; </li>
-                        <li>Pain free single leg shrimp squat x5 reps &check;</li>
-                        <li>Pain free next day after 2.5km run &check;</li>
-                        <li>Pain free next day after 45 min cycle &check;</li>
-                    </ul>
-                    <p><span>Recovery status:</span> recovery in progress</p>
-                    <p class="pre-list"><span>Evidence/references:</span></p>
-                    <ul>
-                        <li><a href="https://core.ac.uk/reader/161894196?utm_source=linkout">Exercise and Physiotherapy
-                                interventions for Patello-femoral knee pain
-                            </a></li>
-                        <li><a
-                                href="https://www.jospt.org/doi/10.2519/jospt.2019.0302?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed">Patello-femoral
-                                Pain</a> (Clinical Practice Guidelines 2019)</li>
-                        <li><a href="https://www.physio-pedia.com/Plica_Syndrome">Plica syndrome</a></li>
-                        <li><a href="https://www.physio-pedia.com/Q_Angle">Q-Angle</a></li>
-                        <li><a href="https://www.physio-pedia.com/Chondromalacia_Patellae">Chondromalacia Patellae</a>
-                        </li>
-                        <li><a href="https://www.physio-pedia.com/Sinding_Larsen_Johansson_Syndrome">Sinding Larsen
-                                Johansson Syndrome</a></li>
-                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/11589643/">Philidelphia Clinical Practice
-                                Guidelines on selected interventions for knee pain</a></li>
-                        <li><a href=”https://www.physio-pedia.com/Femoral_Nerve_Tension_Test” target=”_blank”> Femoral
-                                Nerve Tension Test</a></li>
-                        <li><a href=”https://www.physio-pedia.com/Iliotibial_Band_Syndrome” target=”_blank”> Iliotibial
-                                Band Syndrome</a></li>
-                    </ul>
-                </article>
-            </section>
+        </ul>
+        </article>
+        <article class="knee">
+            <h3>Knee injury</h3>
+            <figure>
+                <img src="img/knee.jpg" alt="An extended knee with tensed muscles">
+            </figure>
+            <p><span>Case:</span> 29 y. o. highly active individual reports knee pain during sustained and
+                loaded flexion with
+                particular pain issues during prolonged sitting and returning to movement post prolonged
+                sitting. Long-term symptoms with increase in
+                severity after rapid increase in cycling duration from 20 minutes to 2 hours regularly, multiple
+                times weekly. </p>
+            <p class="pre-list tests"><span>Tests:</span></p>
+            <ul>
+                <li class="range">Range of movement</li>
+                <li class="palpation">Palpation/observation</li>
+                <li class="strength">Strength</li>
+                <li class="specific">Specific tests</li>
+                <li class="functional">Functional tests</li>
+                <li class="anterior">Anterior knee pain scale</li>
+            </ul>
+            <p class="pre-list"><span>Reasoning:</span></p>
+            <ul>
+                <li>Sufficient knee extension strength, disproportionate weakness in hip and
+                    knee flexors and mild weakness in hip extensors</li>
+                <li><em>Eliminated diagnoses:</em> Plica syndrome, Capital Femoral Epiphysis, muscle tears,
+                    articular cartilage lesion, Osteochondritis Dissecans of the knee,
+                    Patellofemoral instability, Patellar Tendinopathy, Knee Osteoarthritis, Prepatellar
+                    Bursitis, Iliotibial band syndrome</li>
+                <li>Fractures unlikely due to symptom severity and pattern</li>
+            </ul>
+            <p class="pre-list"><span>Working diagnosis:</span><a
+                    href="https://www.jospt.org/doi/10.2519/jospt.2019.0302?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed">
+                    Patello-femoral pain</a></p>
+            <p class="pre-list"><span>Treatment plan:</span></p>
+            <ul>
+                <li>Exercise therapy with combined hip and knee exercises<a
+                        href="https://core.ac.uk/reader/161894196?utm_source=linkout" target="_blank"> 1</a>
+                </li>
+                <li>Exercise therapy + foot orthoses or patellar taping or manual therapy</li>
+                <li>Hip flexor strengthenging: <a
+                        href="https://www.google.com/search?q=straight+leg+raise+exercise&sca_esv=7d380bcdbd6e9b9f&rlz=1C1CHBF_en-GBAU965AU966&sxsrf=ACQVn08W0vWhyjxEIP7nEQmLezbiDLkSrw%3A1713495813450&ei=Bd8hZqyEG8j14-EP-OK60A8&ved=0ahUKEwjsmqOqpc2FAxXI-jgGHXixDvoQ4dUDCBA&uact=5&oq=straight+leg+raise+exercise&gs_lp=Egxnd3Mtd2l6LXNlcnAiG3N0cmFpZ2h0IGxlZyByYWlzZSBleGVyY2lzZTIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzIKEAAYsAMY1gQYRzINEAAYgAQYsAMYQxiKBTINEAAYgAQYsAMYQxiKBUjzEFDGBli6D3ABeAGQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgGgAgmYAwCIBgGQBgqSBwExoAcA&sclient=gws-wiz-serp#fpstate=ive&vld=cid:d2d62403,vid:U4L_6JEv9Jg,st:0">straight
+                        leg raise</a> <a href="https://www.youtube.com/watch?v=qaaQnzWmWfc">resisted hip
+                        flexion</a></li>
+                <li>Hip extensor and abductor strengthenging: bulgarian split squats, single leg bridges, end of
+                    range pistol squats</li>
+                <li>Controlled mobility exercises: cossack squats, L-sit leg raises (hamstrings), Prasarita
+                    Padottanasana</li>
+                <li>Avoid: dry needling, manual therapy, mobilisations in isolation, and electrophysical agents
+                </li>
+                <li>No manual therapy</li>
+            </ul>
+            <p class="pre-list"><span>Recovery checklist:</span></p>
+            <ul>
+                <li>Sitting 30 minutes pain free &times; </li>
+                <li>Pain free single leg shrimp squat x5 reps &check;</li>
+                <li>Pain free next day after 2.5km run &check;</li>
+                <li>Pain free next day after 45 min cycle &check;</li>
+            </ul>
+            <p class="pre-list"><span>Recovery status:</span> recovery in progress</p>
+            <p class="pre-list"><span>Evidence/references:</span></p>
+            <ul>
+                <li><a href="https://core.ac.uk/reader/161894196?utm_source=linkout">Exercise and Physiotherapy
+                        interventions for Patello-femoral knee pain
+                    </a></li>
+                <li><a
+                        href="https://www.jospt.org/doi/10.2519/jospt.2019.0302?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed">Patello-femoral
+                        Pain</a> (Clinical Practice Guidelines 2019)</li>
+                <li><a href="https://www.physio-pedia.com/Plica_Syndrome">Plica syndrome</a></li>
+                <li><a href="https://www.physio-pedia.com/Q_Angle">Q-Angle</a></li>
+                <li><a href="https://www.physio-pedia.com/Chondromalacia_Patellae">Chondromalacia Patellae</a>
+                </li>
+                <li><a href="https://www.physio-pedia.com/Sinding_Larsen_Johansson_Syndrome">Sinding Larsen
+                        Johansson Syndrome</a></li>
+                <li><a href="https://pubmed.ncbi.nlm.nih.gov/11589643/">Philidelphia Clinical Practice
+                        Guidelines on selected interventions for knee pain</a></li>
+                <li><a href=”https://www.physio-pedia.com/Femoral_Nerve_Tension_Test” target=”_blank”> Femoral
+                        Nerve Tension Test</a></li>
+                <li><a href=”https://www.physio-pedia.com/Iliotibial_Band_Syndrome” target=”_blank”> Iliotibial
+                        Band Syndrome</a></li>
+            </ul>
+        </article>
+        </section>
         </div>
     </main>
     <footer>
@@ -219,5 +258,12 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!--<script src="js/script.js"></script>-->
+    <script src="js/shoulder-tests.js"></script>
+    <script src="js/shoulder-reasoning.js"></script>
+    <script src="js/shoulder-diagnosis.js"></script>
+    <script src="js/shoulder-plan.js"></script>
+    <script src="js/shoulder-checklist.js"></script>
+    <script src="js/shoulder-status.js"></script>
+    <script src="js/shoulder-evidence.js"></script>
 </body>

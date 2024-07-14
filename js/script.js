@@ -46,9 +46,8 @@ shoulderRange.addEventListener("click", function(){
     Abduction: 45 degrees p2<br>
     Extension: 10 degrees p2<br>
     Internal rotation: to abdomen<br>
-    External rotation: -10 degrees</p>
-    Passive range only partially tested:
-    `
+    External rotation: -10 degrees<br>
+    Passive range only partially tested</p>`
 })
 
 shoulderPalpation.addEventListener("click", function(){

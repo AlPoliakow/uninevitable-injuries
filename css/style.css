@@ -297,8 +297,35 @@ main article p span {
   font-weight: 800;
 }
 
+.no-points {
+  list-style: none;
+  padding-left:0;
+}
+
+.no-points li{
+  padding-left:0;
+}
+
 main article .pre-list {
   margin-bottom: 0;
+}
+
+.base{
+  display: flex;
+  justify-content: space-between;
+}
+
+.expandable {
+  margin:0.5em 0 0 0;
+  padding:0 0.25em;
+}
+
+.expandable i{
+  font-size: 1em;
+}
+
+.not-displayed {
+  display:none;
 }
 
 main .content-wrapper .articles article span {
