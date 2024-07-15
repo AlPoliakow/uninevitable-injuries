@@ -260,8 +260,9 @@ main .content-wrapper .articles article {
   border: 2px black solid;
   border-radius: 0.5em;
   margin: 1em;
-  padding: 1em;
-  max-width: 350px;
+  padding: 1em 1em 2em 1em;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 main .content-wrapper .articles article h3 {
@@ -272,14 +273,16 @@ main .content-wrapper .articles article h3 {
 
 main .content-wrapper .articles article figure {
   max-height: 200px;
+  width: auto;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 main .content-wrapper .articles article img {
   max-height: 200px;
-  max-width: 400px;
+  width: auto;
   border: black 2px solid;
 }
 
@@ -309,7 +312,7 @@ main article p span {
   padding-left: 0;
 }
 
-main article .pre-list{
+main article .pre-list {
   margin-bottom: 0;
 }
 
@@ -321,7 +324,7 @@ main article .pre-list{
   position: absolute;
   right: 0;
   top: 0;
-  bottom:0;
+  bottom: 0;
 }
 
 .expandable i {
@@ -498,7 +501,12 @@ footer .developed {
   }
 
   main .content-wrapper .articles article {
-    width: 40%;
+    width: calc(50% - 3em);
+    max-width: 400px;
+  }
+
+  footer .acknowledgement {
+    max-width: calc(800px + 2em);
   }
 }
 
@@ -520,6 +528,10 @@ footer .developed {
     background-size: cover;
     background-position: center;
   }
+
+  footer {
+    padding-bottom: 20px;
+  }
 }
 
 @media only screen and (min-width: 1800px) {
@@ -533,8 +545,8 @@ footer .developed {
   .hero {
     min-height: 300px;
     width: 100%;
-    background: url('../img/hero4.jpg') #333 no-repeat;
-    background-size: cover;
+    background: url('../img/hero4.jpg') #FFFFFF no-repeat;
+    background-size: 1850px;
     background-position: center;
   }
 }
