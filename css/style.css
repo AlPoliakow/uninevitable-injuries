@@ -230,13 +230,13 @@ header h1 {
 }
 
 
-.hero {
+/*.hero {
   min-height: 200px;
   width: 100%;
   background: url('../img/hero1.jpg') #333 no-repeat;
   background-size: cover;
   background-position: center;
-}
+}*/
 
 .slogan {
   border-top: dotted 2px black;

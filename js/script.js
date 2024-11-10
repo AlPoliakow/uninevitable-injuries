@@ -1,5 +1,3 @@
-//heading
-const header = document.querySelector("h1");
 //shoulder tests
 const shoulderTests = document.querySelector(".shoulder .tests");
 const shoulderRange = document.querySelector(".shoulder .range");
@@ -17,26 +15,7 @@ const kneeSpecific = document.querySelector(".knee .specific");
 const kneeFunctional = document.querySelector(".knee .functional");
 const kneeAnterior = document.querySelector(".knee .anterior");
 
-// nav menu
-const toggle = document.querySelector('.toggle');
-const nav = document.querySelector('.full-screen-nav');
-const backdrop = document.querySelector('.backdrop');
 
-toggle.addEventListener('click', () => nav.classList.add('open-nav'));
-backdrop.addEventListener('click', () => nav.classList.remove('open-nav'));
-
-function closeNav() {
-    nav.classList.remove('open-nav');
-}
-
-//change header on mouseover
-header.addEventListener("mouseover", function(){
-    header.innerText="(Un)inevitable Injuries";
-})
-
-header.addEventListener("mouseleave", function(){
-    header.innerText="Inevitable Injuries";
-})
 
 // make shoulder test information appear
 shoulderRange.addEventListener("click", function(){
